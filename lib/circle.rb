@@ -11,8 +11,8 @@ class Circle
 	
 	@@Pi = 3.14
 
-	# method 'get_radius' returns the radius calculated from the diameter received
-	def self.get_radius(perimeter)
+	# method 'calc_radius_by_perimiter' returns the radius calculated from the diameter received
+	def self.calc_radius_by_perimiter(perimeter)
 		raise unless perimeter.is_a?(Numeric) && perimeter >= 0
 		perimeter / @@Pi / 2
 	end
